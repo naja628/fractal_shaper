@@ -1,0 +1,225 @@
+Help on class Rect in module pygame:
+
+class RReecctt(builtins.object)
+ |  Rect(left, top, width, height) -> Rect
+ |  Rect((left, top), (width, height)) -> Rect
+ |  Rect(object) -> Rect
+ |  pygame object for storing rectangular coordinates
+ |  
+ |  Methods defined here:
+ |  
+ |  ____bbooooll____(self, /)
+ |      self != 0
+ |  
+ |  ____ccoonnttaaiinnss____(self, key, /)
+ |      Return key in self.
+ |  
+ |  ____ccooppyy____(...)
+ |  
+ |  ____ddeelliitteemm____(self, key, /)
+ |      Delete self[key].
+ |  
+ |  ____eeqq____(self, value, /)
+ |      Return self==value.
+ |  
+ |  ____ggee____(self, value, /)
+ |      Return self>=value.
+ |  
+ |  ____ggeettiitteemm____(self, key, /)
+ |      Return self[key].
+ |  
+ |  ____ggtt____(self, value, /)
+ |      Return self>value.
+ |  
+ |  ____iinniitt____(self, /, *args, **kwargs)
+ |      Initialize self.  See help(type(self)) for accurate signature.
+ |  
+ |  ____llee____(self, value, /)
+ |      Return self<=value.
+ |  
+ |  ____lleenn____(self, /)
+ |      Return len(self).
+ |  
+ |  ____lltt____(self, value, /)
+ |      Return self<value.
+ |  
+ |  ____nnee____(self, value, /)
+ |      Return self!=value.
+ |  
+ |  ____rreedduuccee____(...)
+ |      Helper for pickle.
+ |  
+ |  ____rreepprr____(self, /)
+ |      Return repr(self).
+ |  
+ |  ____sseettiitteemm____(self, key, value, /)
+ |      Set self[key] to value.
+ |  
+ |  ____ssttrr____(self, /)
+ |      Return str(self).
+ |  
+ |  ccllaammpp(...)
+ |      clamp(Rect) -> Rect
+ |      moves the rectangle inside another
+ |  
+ |  ccllaammpp__iipp(...)
+ |      clamp_ip(Rect) -> None
+ |      moves the rectangle inside another, in place
+ |  
+ |  cclliipp(...)
+ |      clip(Rect) -> Rect
+ |      crops a rectangle inside another
+ |  
+ |  cclliipplliinnee(...)
+ |      clipline(x1, y1, x2, y2) -> ((cx1, cy1), (cx2, cy2))
+ |      clipline(x1, y1, x2, y2) -> ()
+ |      clipline((x1, y1), (x2, y2)) -> ((cx1, cy1), (cx2, cy2))
+ |      clipline((x1, y1), (x2, y2)) -> ()
+ |      clipline((x1, y1, x2, y2)) -> ((cx1, cy1), (cx2, cy2))
+ |      clipline((x1, y1, x2, y2)) -> ()
+ |      clipline(((x1, y1), (x2, y2))) -> ((cx1, cy1), (cx2, cy2))
+ |      clipline(((x1, y1), (x2, y2))) -> ()
+ |      crops a line inside a rectangle
+ |  
+ |  ccoolllliiddeeddiicctt(...)
+ |      collidedict(dict) -> (key, value)
+ |      collidedict(dict) -> None
+ |      collidedict(dict, use_values=0) -> (key, value)
+ |      collidedict(dict, use_values=0) -> None
+ |      test if one rectangle in a dictionary intersects
+ |  
+ |  ccoolllliiddeeddiiccttaallll(...)
+ |      collidedictall(dict) -> [(key, value), ...]
+ |      collidedictall(dict, use_values=0) -> [(key, value), ...]
+ |      test if all rectangles in a dictionary intersect
+ |  
+ |  ccoolllliiddeelliisstt(...)
+ |      collidelist(list) -> index
+ |      test if one rectangle in a list intersects
+ |  
+ |  ccoolllliiddeelliissttaallll(...)
+ |      collidelistall(list) -> indices
+ |      test if all rectangles in a list intersect
+ |  
+ |  ccoolllliiddeeppooiinntt(...)
+ |      collidepoint(x, y) -> bool
+ |      collidepoint((x,y)) -> bool
+ |      test if a point is inside a rectangle
+ |  
+ |  ccoolllliiddeerreecctt(...)
+ |      colliderect(Rect) -> bool
+ |      test if two rectangles overlap
+ |  
+ |  ccoonnttaaiinnss(...)
+ |      contains(Rect) -> bool
+ |      test if one rectangle is inside another
+ |  
+ |  ccooppyy(...)
+ |      copy() -> Rect
+ |      copy the rectangle
+ |  
+ |  ffiitt(...)
+ |      fit(Rect) -> Rect
+ |      resize and move a rectangle with aspect ratio
+ |  
+ |  iinnffllaattee(...)
+ |      inflate(x, y) -> Rect
+ |      grow or shrink the rectangle size
+ |  
+ |  iinnffllaattee__iipp(...)
+ |      inflate_ip(x, y) -> None
+ |      grow or shrink the rectangle size, in place
+ |  
+ |  mmoovvee(...)
+ |      move(x, y) -> Rect
+ |      moves the rectangle
+ |  
+ |  mmoovvee__iipp(...)
+ |      move_ip(x, y) -> None
+ |      moves the rectangle, in place
+ |  
+ |  nnoorrmmaalliizzee(...)
+ |      normalize() -> None
+ |      correct negative sizes
+ |  
+ |  uunniioonn(...)
+ |      union(Rect) -> Rect
+ |      joins two rectangles into one
+ |  
+ |  uunniioonn__iipp(...)
+ |      union_ip(Rect) -> None
+ |      joins two rectangles into one, in place
+ |  
+ |  uunniioonnaallll(...)
+ |      unionall(Rect_sequence) -> Rect
+ |      the union of many rectangles
+ |  
+ |  uunniioonnaallll__iipp(...)
+ |      unionall_ip(Rect_sequence) -> None
+ |      the union of many rectangles, in place
+ |  
+ |  uuppddaattee(...)
+ |      update(left, top, width, height) -> None
+ |      update((left, top), (width, height)) -> None
+ |      update(object) -> None
+ |      sets the position and size of the rectangle
+ |  
+ |  ----------------------------------------------------------------------
+ |  Static methods defined here:
+ |  
+ |  ____nneeww____(*args, **kwargs) from builtins.type
+ |      Create and return a new object.  See help(type) for accurate signature.
+ |  
+ |  ----------------------------------------------------------------------
+ |  Data descriptors defined here:
+ |  
+ |  ____ssaaffee__ffoorr__uunnppiicckklliinngg____
+ |  
+ |  bboottttoomm
+ |  
+ |  bboottttoommlleefftt
+ |  
+ |  bboottttoommrriigghhtt
+ |  
+ |  cceenntteerr
+ |  
+ |  cceenntteerrxx
+ |  
+ |  cceenntteerryy
+ |  
+ |  hh
+ |  
+ |  hheeiigghhtt
+ |  
+ |  lleefftt
+ |  
+ |  mmiiddbboottttoomm
+ |  
+ |  mmiiddlleefftt
+ |  
+ |  mmiiddrriigghhtt
+ |  
+ |  mmiiddttoopp
+ |  
+ |  rriigghhtt
+ |  
+ |  ssiizzee
+ |  
+ |  ttoopp
+ |  
+ |  ttoopplleefftt
+ |  
+ |  ttoopprriigghhtt
+ |  
+ |  ww
+ |  
+ |  wwiiddtthh
+ |  
+ |  xx
+ |  
+ |  yy
+ |  
+ |  ----------------------------------------------------------------------
+ |  Data and other attributes defined here:
+ |  
+ |  ____hhaasshh____ = None

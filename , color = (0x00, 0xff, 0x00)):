@@ -1,0 +1,227 @@
+Help on class Surface in module pygame:
+
+class SSuurrffaaccee(builtins.object)
+ |  Surface((width, height), flags=0, depth=0, masks=None) -> Surface
+ |  Surface((width, height), flags=0, Surface) -> Surface
+ |  pygame object for representing images
+ |  
+ |  Methods defined here:
+ |  
+ |  ____ccooppyy____(...)
+ |      copy() -> Surface
+ |      create a new copy of a Surface
+ |  
+ |  ____iinniitt____(self, /, *args, **kwargs)
+ |      Initialize self.  See help(type(self)) for accurate signature.
+ |  
+ |  ____rreepprr____(self, /)
+ |      Return repr(self).
+ |  
+ |  bblliitt(...)
+ |      blit(source, dest, area=None, special_flags=0) -> Rect
+ |      draw one image onto another
+ |  
+ |  bblliittss(...)
+ |      blits(blit_sequence=((source, dest), ...), doreturn=1) -> [Rect, ...] or None
+ |      blits(((source, dest, area), ...)) -> [Rect, ...]
+ |      blits(((source, dest, area, special_flags), ...)) -> [Rect, ...]
+ |      draw many images onto another
+ |  
+ |  ccoonnvveerrtt(...)
+ |      convert(Surface=None) -> Surface
+ |      convert(depth, flags=0) -> Surface
+ |      convert(masks, flags=0) -> Surface
+ |      change the pixel format of an image
+ |  
+ |  ccoonnvveerrtt__aallpphhaa(...)
+ |      convert_alpha(Surface) -> Surface
+ |      convert_alpha() -> Surface
+ |      change the pixel format of an image including per pixel alphas
+ |  
+ |  ccooppyy(...)
+ |      copy() -> Surface
+ |      create a new copy of a Surface
+ |  
+ |  ffiillll(...)
+ |      fill(color, rect=None, special_flags=0) -> Rect
+ |      fill Surface with a solid color
+ |  
+ |  ggeett__aabbss__ooffffsseett(...)
+ |      get_abs_offset() -> (x, y)
+ |      find the absolute position of a child subsurface inside its top level parent
+ |  
+ |  ggeett__aabbss__ppaarreenntt(...)
+ |      get_abs_parent() -> Surface
+ |      find the top level parent of a subsurface
+ |  
+ |  ggeett__aallpphhaa(...)
+ |      get_alpha() -> int_value
+ |      get the current Surface transparency value
+ |  
+ |  ggeett__aatt(...)
+ |      get_at((x, y)) -> Color
+ |      get the color value at a single pixel
+ |  
+ |  ggeett__aatt__mmaappppeedd(...)
+ |      get_at_mapped((x, y)) -> Color
+ |      get the mapped color value at a single pixel
+ |  
+ |  ggeett__bbiittssiizzee(...)
+ |      get_bitsize() -> int
+ |      get the bit depth of the Surface pixel format
+ |  
+ |  ggeett__bblleennddmmooddee(...)
+ |      Return the surface's SDL 2 blend mode
+ |  
+ |  ggeett__bboouunnddiinngg__rreecctt(...)
+ |      get_bounding_rect(min_alpha = 1) -> Rect
+ |      find the smallest rect containing data
+ |  
+ |  ggeett__bbuuffffeerr(...)
+ |      get_buffer() -> BufferProxy
+ |      acquires a buffer object for the pixels of the Surface.
+ |  
+ |  ggeett__bbyytteessiizzee(...)
+ |      get_bytesize() -> int
+ |      get the bytes used per Surface pixel
+ |  
+ |  ggeett__cclliipp(...)
+ |      get_clip() -> Rect
+ |      get the current clipping area of the Surface
+ |  
+ |  ggeett__ccoolloorrkkeeyy(...)
+ |      get_colorkey() -> RGB or None
+ |      Get the current transparent colorkey
+ |  
+ |  ggeett__ffllaaggss(...)
+ |      get_flags() -> int
+ |      get the additional flags used for the Surface
+ |  
+ |  ggeett__hheeiigghhtt(...)
+ |      get_height() -> height
+ |      get the height of the Surface
+ |  
+ |  ggeett__lloocckkeedd(...)
+ |      get_locked() -> bool
+ |      test if the Surface is current locked
+ |  
+ |  ggeett__lloocckkss(...)
+ |      get_locks() -> tuple
+ |      Gets the locks for the Surface
+ |  
+ |  ggeett__lloosssseess(...)
+ |      get_losses() -> (R, G, B, A)
+ |      the significant bits used to convert between a color and a mapped integer
+ |  
+ |  ggeett__mmaasskkss(...)
+ |      get_masks() -> (R, G, B, A)
+ |      the bitmasks needed to convert between a color and a mapped integer
+ |  
+ |  ggeett__ooffffsseett(...)
+ |      get_offset() -> (x, y)
+ |      find the position of a child subsurface inside a parent
+ |  
+ |  ggeett__ppaalleettttee(...)
+ |      get_palette() -> [RGB, RGB, RGB, ...]
+ |      get the color index palette for an 8-bit Surface
+ |  
+ |  ggeett__ppaalleettttee__aatt(...)
+ |      get_palette_at(index) -> RGB
+ |      get the color for a single entry in a palette
+ |  
+ |  ggeett__ppaarreenntt(...)
+ |      get_parent() -> Surface
+ |      find the parent of a subsurface
+ |  
+ |  ggeett__ppiittcchh(...)
+ |      get_pitch() -> int
+ |      get the number of bytes used per Surface row
+ |  
+ |  ggeett__rreecctt(...)
+ |      get_rect(**kwargs) -> Rect
+ |      get the rectangular area of the Surface
+ |  
+ |  ggeett__sshhiiffttss(...)
+ |      get_shifts() -> (R, G, B, A)
+ |      the bit shifts needed to convert between a color and a mapped integer
+ |  
+ |  ggeett__ssiizzee(...)
+ |      get_size() -> (width, height)
+ |      get the dimensions of the Surface
+ |  
+ |  ggeett__vviieeww(...)
+ |      get_view(<kind>='2') -> BufferProxy
+ |      return a buffer view of the Surface's pixels.
+ |  
+ |  ggeett__wwiiddtthh(...)
+ |      get_width() -> width
+ |      get the width of the Surface
+ |  
+ |  lloocckk(...)
+ |      lock() -> None
+ |      lock the Surface memory for pixel access
+ |  
+ |  mmaapp__rrggbb(...)
+ |      map_rgb(Color) -> mapped_int
+ |      convert a color into a mapped color value
+ |  
+ |  mmuussttlloocckk(...)
+ |      mustlock() -> bool
+ |      test if the Surface requires locking
+ |  
+ |  ssccrroollll(...)
+ |      scroll(dx=0, dy=0) -> None
+ |      Shift the surface image in place
+ |  
+ |  sseett__aallpphhaa(...)
+ |      set_alpha(value, flags=0) -> None
+ |      set_alpha(None) -> None
+ |      set the alpha value for the full Surface image
+ |  
+ |  sseett__aatt(...)
+ |      set_at((x, y), Color) -> None
+ |      set the color value for a single pixel
+ |  
+ |  sseett__cclliipp(...)
+ |      set_clip(rect) -> None
+ |      set_clip(None) -> None
+ |      set the current clipping area of the Surface
+ |  
+ |  sseett__ccoolloorrkkeeyy(...)
+ |      set_colorkey(Color, flags=0) -> None
+ |      set_colorkey(None) -> None
+ |      Set the transparent colorkey
+ |  
+ |  sseett__mmaasskkss(...)
+ |      set_masks((r,g,b,a)) -> None
+ |      set the bitmasks needed to convert between a color and a mapped integer
+ |  
+ |  sseett__ppaalleettttee(...)
+ |      set_palette([RGB, RGB, RGB, ...]) -> None
+ |      set the color palette for an 8-bit Surface
+ |  
+ |  sseett__ppaalleettttee__aatt(...)
+ |      set_palette_at(index, RGB) -> None
+ |      set the color for a single index in an 8-bit Surface palette
+ |  
+ |  sseett__sshhiiffttss(...)
+ |      set_shifts((r,g,b,a)) -> None
+ |      sets the bit shifts needed to convert between a color and a mapped integer
+ |  
+ |  ssuubbssuurrffaaccee(...)
+ |      subsurface(Rect) -> Surface
+ |      create a new surface that references its parent
+ |  
+ |  uunnlloocckk(...)
+ |      unlock() -> None
+ |      unlock the Surface memory from pixel access
+ |  
+ |  uunnmmaapp__rrggbb(...)
+ |      unmap_rgb(mapped_int) -> Color
+ |      convert a mapped integer color value into a Color
+ |  
+ |  ----------------------------------------------------------------------
+ |  Static methods defined here:
+ |  
+ |  ____nneeww____(*args, **kwargs) from builtins.type
+ |      Create and return a new object.  See help(type) for accurate signature.
